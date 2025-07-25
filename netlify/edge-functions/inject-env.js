@@ -29,7 +29,7 @@ export default async (request, context) => {
   }
   
   // Replace the placeholder with actual environment variable
-  const password = Netlify.env.get('PASSWORD') || '';
+  const password = Netlify.env.get('PASSWORD') || '13289333403';
   let passwordHash = '';
   if (password) {
     passwordHash = await sha256(password);
